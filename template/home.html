@@ -1,0 +1,46 @@
+<header class="header">
+	<h1>八斤耗儿鱼</h1>
+	<span>渝北店,8号桌</span>
+</header>
+<div class="main">
+	<ul class="nav">
+		<li ng-repeat="item in dinnerList" ng-class="{true:'active'}[item.ifChose]" ng-click="changLi($index)">
+			<a href="javascript:;">
+				<i ng-hide="$first"></i>
+				<span class="{{item.class}}"></span> {{item.name}}
+			</a>
+		</li>
+	</ul>
+	
+	<div class="list">
+		<h3>{{rightTitle}}</h3>
+		<ul>
+			<li ng-repeat="item in rightList">
+				<div class="dinner-list">
+					<img ng-src="{{item.pic}}" alt="" />
+					<span class="aaa"><i></i>同桌{{item.tongzhuo}}份</span>
+				</div>
+				<h5 class="name">{{ item.name }}</h5>
+				<span class="price"><i>{{item.price}}</i>/{{item.unit}}</span>
+				<i id="reduce" ng-click="reduce($index)" ng-show="item.num"></i>
+				<i class="num" ng-show="item.num">{{item.num}}</i>
+				<i id="add" ng-click="add($index)"></i>
+			</li>
+
+		</ul>
+
+	</div>
+
+</div>
+<footer class="footerHome">
+	<div class="jiesuan">
+		<div class="allmenu">
+			已点
+			<i>{{totalNum}}</i> 道菜
+		</div>
+		<div class="chufang">
+			<a href="#/menu"><span class="songchuan" ng-class="{true:'songchuan1'}[totalNum]">已点菜单</span></a>
+			
+		</div>
+	</div>
+</footer>

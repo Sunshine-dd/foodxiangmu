@@ -1,0 +1,113 @@
+[{
+    "id": 1,
+    "name": "主菜",
+    "class": "zhucai",
+    "ifChose": true,
+    "items": [{
+        "id": 1,
+        "name": "三金耗儿鱼",
+        "price": 318.00,
+        "unit": "锅",
+        "tongzhuo": 3,
+        "pic": "http://dummyimage.com/750x460/ccc/333.jpg",
+        "num":0
+    }, {
+        "id": 2,
+        "name": "排骨",
+        "price": 68.00,
+        "unit": "斤",
+        "tongzhuo": 2,
+        "pic": "http://dummyimage.com/750x460/ccc/333.jpg",
+         "num":0
+    }, {
+        "id": 3,
+        "name": "河虾",
+        "price": 98.00,
+        "unit": "盘",
+        "tongzhuo": 3,
+        "pic": "http://dummyimage.com/750x460/ccc/333.jpg",
+         "num":0
+    }]
+},{
+    "id": 2,
+    "name": "热菜",
+    "class": "hot",
+    "ifChose": false,
+    "items": [{
+        "id": 3,
+        "name": "农家小炒菜",
+        "price": 38.00,
+        "unit": "盘",
+        "pic": "http://dummyimage.com/750x460/ccc/333.jpg",
+         "num":0
+    }, {
+        "id": 4,
+        "name": "红烧鸡",
+        "price": 128.00,
+        "unit": "只",
+        "pic": "http://dummyimage.com/750x460/ccc/333.jpg",
+         "num":0
+    }]
+},{
+    "id": 2,
+    "name": "凉菜",
+    "class": "liangcai",
+    "ifChose": false,
+    "items": [{
+        "id": 5,
+        "name": "凉拌黄瓜2",
+        "price": 58.00,
+        "unit": "碗",
+        "pic": "http://dummyimage.com/750x460/ccc/333.jpg",
+         "num":0
+    }, {
+        "id": 6,
+        "name": "凉拌皮蛋2",
+        "price": 38.00,
+        "unit": "碗",
+        "pic": "http://dummyimage.com/750x460/ccc/333.jpg",
+         "num":0
+    }]
+},{
+    "id": 2,
+    "name": "汤品",
+    "class": "tangpin",
+    "ifChose": false,
+    "items": [{
+        "id": 5,
+        "name": "土鸡汤4",
+        "price": 88.00,
+        "unit": "锅",
+        "pic": "http://dummyimage.com/750x460/ccc/333.jpg",
+         "num":0
+    }, {
+        "id": 6,
+        "name": "摸鱼排骨汤4",
+        "price": 58.00,
+        "unit": "盅",
+        "pic": "http://dummyimage.com/750x460/ccc/333.jpg",
+         "num":0
+    }]
+
+},{
+    "id": 2,
+    "name": "点心",
+    "class": "dianxin",
+    "ifChose": false,
+    "items": [{
+        "id": 7,
+        "name": "土馒头5",
+        "price": 18.00,
+        "unit": "碗",
+        "pic": "http://dummyimage.com/750x460/ccc/333.jpg",
+         "num":0
+    }, {
+        "id": 8,
+        "name": "香蕉片5",
+        "price": 28.00,
+        "unit": "碗",
+        "pic": "http://dummyimage.com/750x460/ccc/333.jpg",
+         "num":0
+    }]
+
+}]

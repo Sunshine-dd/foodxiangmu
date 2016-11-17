@@ -1,0 +1,51 @@
+<header class="headerMenu">
+	<a href="#/home"><i></i></a>
+	<h3>确认订单</h3>
+</header>
+<section class="menuMain">
+	<div class="menuContent">
+		<h4><i></i>阿国是糖</h4>
+		<ul class="ulList">
+			<li class="menuLi"  ng-repeat="item in shopList" ng-if="item.num">
+				<span class="detail-menu">{{item.name}}</span>
+				<ul class="detail-menu2">
+					<li >
+						<span>¥{{item.price}}<i>/{{item.unit}}</i></span>
+						<b ng-click="menureduce($index)"></b>
+						<u>{{item.num}}</u>
+						<b class="add" ng-click="menuadd($index)"></b>
+					</li>
+				</ul>
+			</li>
+
+		</ul>
+	</div>
+</section>
+<footer class="footerMenu">
+	<div class="beizhu">
+		备注: <input type="text" name="beizhu" id="beizhu" placeholder="(选填) 请输入你的口味、要求、忌口等" />
+	</div>
+	<div class="jiesuan">
+		<div class="allmenu">
+			已点
+			<i>{{totalNum}}</i> 道菜
+		</div>
+		<div class="totalprice">
+			总价
+			<i>{{totalPrice}}</i>
+		</div>
+		<div class="chufang">
+			<span class="songchuan"  ng-click="cuansongchufang()">传送厨房</span>
+		</div>
+	</div>
+</footer>
+	<div class="tankuang" ng-class="{true:'tankuang1'}[ifShow]">
+	<span>确定让厨房开始制作菜品了吗?</span>
+	<div class="btn">
+		<a href="javascript:;"><button class="quxiao" ng-click="quxiao()">取消</button></a>
+		
+		<a href="#/finish"><button class="sure">确定</button></a>	
+	</div>
+
+</div>
+<div class="zhezaoceng" ng-show="ifShow"></div>
